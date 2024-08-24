@@ -18,8 +18,12 @@ class HomePage extends StatelessWidget {
               Container(
                 width: 100,
                 height: 100,
-                margin: const EdgeInsets.all(10),
+                margin: const EdgeInsets.only(left: 10, right: 10),
+                padding: const EdgeInsets.all(10), //memberi jarak didalam kotak hijau
                 color: Colors.green,
+                child: Container(
+                  color: Colors.orange,
+                ),
               ),
               Container(
                 width: 100, 
