@@ -15,12 +15,17 @@ class HomePage extends StatelessWidget {
           width: 100,
           height: 100,
           decoration: BoxDecoration(
-            color: Colors.red,
-            border: Border.all(color: Colors.black, width: 10),
+            // color: Colors.red,
+            border: Border.all(color: Colors.black, width: 3),
             borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(20),
               bottomRight: Radius.circular(20),
             ),
+            gradient: const LinearGradient(
+              colors: [Colors.red, Colors.yellow],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              ),
           ),
         ),
       ),
