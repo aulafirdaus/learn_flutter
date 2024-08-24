@@ -17,10 +17,10 @@ class HomePage extends StatelessWidget {
           decoration: BoxDecoration(
             // color: Colors.red,
             border: Border.all(color: Colors.orange, width: 3),
-            borderRadius: const BorderRadius.only(
-              topLeft: Radius.circular(20),
-              bottomRight: Radius.circular(20),
-            ),
+            // borderRadius: const BorderRadius.only(
+            //   topLeft: Radius.circular(20),
+            //   bottomRight: Radius.circular(20),
+            // ),
             // gradient: const LinearGradient(
             //   colors: [Colors.red, Colors.yellow],
             //   begin: Alignment.topLeft,
@@ -36,6 +36,7 @@ class HomePage extends StatelessWidget {
               spreadRadius: 3,
               offset: Offset(2, 2),
             )],
+            shape: BoxShape.circle,
           ),
         ),
       ),
