@@ -14,7 +14,14 @@ class HomePage extends StatelessWidget {
         child: Container(
           width: 100,
           height: 100,
-          color: Colors.red,
+          decoration: BoxDecoration(
+            color: Colors.red,
+            border: Border.all(color: Colors.black, width: 10),
+            borderRadius: const BorderRadius.only(
+              topLeft: Radius.circular(20),
+              bottomRight: Radius.circular(20),
+            ),
+          ),
         ),
       ),
     );
