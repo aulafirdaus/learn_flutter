@@ -16,16 +16,20 @@ class HomePage extends StatelessWidget {
           height: 100,
           decoration: BoxDecoration(
             // color: Colors.red,
-            border: Border.all(color: Colors.black, width: 3),
+            border: Border.all(color: Colors.orange, width: 3),
             borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(20),
               bottomRight: Radius.circular(20),
             ),
-            gradient: const LinearGradient(
-              colors: [Colors.red, Colors.yellow],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              ),
+            // gradient: const LinearGradient(
+            //   colors: [Colors.red, Colors.yellow],
+            //   begin: Alignment.topLeft,
+            //   end: Alignment.bottomRight,
+            // ),
+            image: const DecorationImage(
+              image: NetworkImage('https://i.pinimg.com/736x/09/6f/f7/096ff7fd728e880bca931a69a1417a5f.jpg'),
+              fit: BoxFit.cover,
+            ),
           ),
         ),
       ),
