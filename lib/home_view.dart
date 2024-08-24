@@ -30,6 +30,12 @@ class HomePage extends StatelessWidget {
               image: NetworkImage('https://i.pinimg.com/736x/09/6f/f7/096ff7fd728e880bca931a69a1417a5f.jpg'),
               fit: BoxFit.cover,
             ),
+            boxShadow: const [ BoxShadow(
+              color: Colors.orange,
+              blurRadius: 6,
+              spreadRadius: 3,
+              offset: Offset(2, 2),
+            )],
           ),
         ),
       ),
