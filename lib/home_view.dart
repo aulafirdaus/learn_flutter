@@ -17,6 +17,7 @@ class HomePage extends StatelessWidget {
             'Hello.. Nama saya Aula Firdaus, saat ini sedang memulai belajar widget text pada flutter',
             // textAlign: TextAlign.center,
             maxLines: 2, //maxLine untuk membatasi baris
+            overflow: TextOverflow.ellipsis, //untuk membuat titik jika tulisannya melebihi batas
           ),
         ),
       ),
