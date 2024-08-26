@@ -18,6 +18,25 @@ class HomePage extends StatelessWidget {
             // textAlign: TextAlign.center,
             maxLines: 2, //maxLine untuk membatasi baris
             overflow: TextOverflow.ellipsis, //untuk membuat titik jika tulisannya melebihi batas
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              backgroundColor: Colors.red,
+              fontStyle: FontStyle.italic,
+              shadows: [
+                Shadow(
+                  blurRadius: 5,
+                  color: Colors.yellow,
+                  offset: Offset(2, 2),
+                ),
+              ],
+              letterSpacing: 2, //memberikan jarak per huruf nya
+              wordSpacing: 2, //memberikan jarak per kata
+              decoration: TextDecoration.underline,
+              decorationColor: Colors.blue,
+              decorationStyle: TextDecorationStyle.wavy, //memberikan underline bergelombang
+              decorationThickness: 2,
+            ),
           ),
         ),
       ),
