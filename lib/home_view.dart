@@ -8,17 +8,27 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Belajar Mengubah Font'),
+        title: const Text('Layout | Stack Widget'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
-      body: Center(
-        child: SizedBox(
-          width: 200,
-          child: Text(
-            'Hello.. Nama saya Aula Firdaus, saat ini sedang memulai belajar mengubah font pada flutter',
-          style: GoogleFonts.merienda(),
+      body: Row(
+        children: [
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.red,
           ),
-        ),
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.green,
+          ),
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.blue,
+          ),
+        ],
       ),
     );
   }
