@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,15 +11,12 @@ class HomePage extends StatelessWidget {
         title: const Text('Belajar Mengubah Font'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
-      body: const Center(
+      body: Center(
         child: SizedBox(
           width: 200,
           child: Text(
             'Hello.. Nama saya Aula Firdaus, saat ini sedang memulai belajar mengubah font pada flutter',
-            style: TextStyle(
-              fontFamily: 'Merienda',
-              fontWeight: FontWeight.bold,
-              ),
+          style: GoogleFonts.merienda(),
           ),
         ),
       ),
