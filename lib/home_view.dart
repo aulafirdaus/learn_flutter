@@ -15,6 +15,10 @@ class HomePage extends StatelessWidget {
           width: 200,
           child: Text(
             'Hello.. Nama saya Aula Firdaus, saat ini sedang memulai belajar mengubah font pada flutter',
+            style: TextStyle(
+              fontFamily: 'Merienda',
+              fontWeight: FontWeight.bold,
+              ),
           ),
         ),
       ),
