@@ -11,24 +11,31 @@ class HomePage extends StatelessWidget {
         title: const Text('Layout | Stack Widget'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
-      body: Row(
-        children: [
-          Container(
-            width: 100,
-            height: 100,
-            color: Colors.red,
-          ),
-          Container(
-            width: 100,
-            height: 100,
-            color: Colors.green,
-          ),
-          Container(
-            width: 100,
-            height: 100,
-            color: Colors.blue,
-          ),
-        ],
+      body: Container(
+        // Stack adalah widget yang digunakan untuk menempatkan widget di dalam widget lainnya dan mengatur posisi widgetnya
+        color: Colors.yellow,
+        child: Stack(
+          children: [
+            Container(
+              margin: const EdgeInsets.all(10),
+              width: 100,
+              height: 100,
+              color: Colors.red,
+            ),
+            Container(
+              margin: const EdgeInsets.all(10),
+              width: 100,
+              height: 100,
+              color: Colors.green,
+            ),
+            Container(
+              margin: const EdgeInsets.all(10),
+              width: 100,
+              height: 100,
+              color: Colors.blue,
+            ),
+          ],
+        ),
       ),
     );
   }
