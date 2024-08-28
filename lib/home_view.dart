@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -13,8 +12,9 @@ class HomePage extends StatelessWidget {
       ),
       body: Container(
         // Stack adalah widget yang digunakan untuk menempatkan widget di dalam widget lainnya dan mengatur posisi widgetnya
-        color: Colors.yellow,
+        color: Colors.yellow.shade100,
         child: Stack(
+          alignment: Alignment.topRight, // mengubar posisi widget yang didalam stack
           children: [
             Container(
               margin: const EdgeInsets.all(10),
@@ -23,13 +23,13 @@ class HomePage extends StatelessWidget {
               color: Colors.red,
             ),
             Container(
-              margin: const EdgeInsets.all(10),
+              margin: const EdgeInsets.all(30),
               width: 100,
               height: 100,
               color: Colors.green,
             ),
             Container(
-              margin: const EdgeInsets.all(10),
+              margin: const EdgeInsets.all(50),
               width: 100,
               height: 100,
               color: Colors.blue,
