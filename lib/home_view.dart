@@ -10,28 +10,23 @@ class HomePage extends StatelessWidget {
         title: const Text('Padding Widget'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
-      body: Row(
+      body: const Row(
         children: [
-          Container(
-            color: Colors.red.shade200,
-            padding: const EdgeInsets.fromLTRB(20, 20, 10, 0),
-            child: const Text('Hallo')),
-          Container(
-            color: Colors.red.shade200,
-            padding: const EdgeInsets.fromLTRB(20, 20, 10, 0),
-            child: const Text('Nama')),
-          Container(
-            color: Colors.red.shade200,
-            padding: const EdgeInsets.fromLTRB(20, 20, 10, 0),
-            child: const Text('Saya')),
-          Container(
-            color: Colors.red.shade200,
-            padding: const EdgeInsets.fromLTRB(20, 20, 10, 0),
-            child: const Text('Aula')),
-          Container(
-            color: Colors.red.shade200,
-            padding: const EdgeInsets.fromLTRB(20, 20, 10, 0),
-            child: const Text('Firdaus')),
+          Padding(
+            padding: EdgeInsets.fromLTRB(20, 20, 10, 0),
+            child: Text('Hallo')),
+          Padding(
+            padding: EdgeInsets.fromLTRB(20, 20, 10, 0),
+            child: Text('Nama')),
+          Padding(
+            padding: EdgeInsets.fromLTRB(20, 20, 10, 0),
+            child: Text('Saya')),
+          Padding(
+            padding: EdgeInsets.fromLTRB(20, 20, 10, 0),
+            child: Text('Aula')),
+          Padding(
+            padding: EdgeInsets.fromLTRB(20, 20, 10, 0),
+            child: Text('Firdaus')),
         ],
       ),
     );
