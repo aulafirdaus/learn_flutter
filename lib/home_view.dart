@@ -8,20 +8,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(child: Text('Icon Widget')),
+        title: const Center(child: Text('TextField Widget')),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
-      body: Center(
-        child: Icon(
-          MdiIcons.heart, //untuk mencari documentasi icon ada di https://pub.dev/packages/material_design_icons_flutter
-          size: 75,
-          color: Colors.red.shade300,
-          shadows: const [Shadow(
-            offset: Offset(3, 3), 
-            color: Colors.black54, 
-            blurRadius: 8,
-          )],
-        ),
+      body: const Column(
+        children: [],
       ),
     );
   }
