@@ -10,7 +10,18 @@ class HomePage extends StatelessWidget {
         title: const Center(child: Text('Icon Widget')),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
-      body: const Center(),
+      body: const Center(
+        child: Icon(
+          Icons.home,
+          size: 75,
+          color: Colors.orange,
+          shadows: [Shadow(
+            offset: Offset(3, 3), 
+            color: Colors.black54, 
+            blurRadius: 8,
+          )],
+        ),
+      ),
     );
   }
 }
