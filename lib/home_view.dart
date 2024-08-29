@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class HomePage extends StatelessWidget {
@@ -16,11 +17,19 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             TextField(
-              obscureText: true, // obscureText untuk memberikan inputnya menjadi bulat seperti type password yang ada pada web
-              obscuringCharacter: '*', //obscuringCharacter untuk mengganti karakter yang ditampilkankan pada inputan, jika di isi "*" maka inputan diubah menjadi tanda bintang
+              // obscureText: true, // obscureText untuk memberikan inputnya menjadi bulat seperti type password yang ada pada web
+              // obscuringCharacter: '*', //obscuringCharacter untuk mengganti karakter yang ditampilkankan pada inputan, jika di isi "*" maka inputan diubah menjadi tanda bintang
+              style: const TextStyle(
+                fontSize: 18, 
+                fontWeight: FontWeight.bold,
+                ),
+              textAlign: TextAlign.center,
+              inputFormatters: [
+                TextInputFormatter.withFunction((oldValue, newValue) => TextEditingValue(text: newValue.text.toUpperCase()),) //ini untuk membuat inputan text menjadi kapital semua (uppercase)
+              ],
               decoration: InputDecoration(
-                icon: Icon(MdiIcons.lock),
-                labelText: 'Password',
+                icon: Icon(MdiIcons.account),
+                labelText: 'Nama',
               ),
             ),
           ],
