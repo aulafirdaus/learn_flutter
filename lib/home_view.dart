@@ -30,8 +30,20 @@ class HomePage extends StatelessWidget {
               decoration: InputDecoration(
                 icon: Icon(MdiIcons.account),
                 labelText: 'Nama',
+                labelStyle: const TextStyle( // untuk memberikan style pada labelText nya
+                  color: Colors.blue,
+                ),
+                floatingLabelAlignment: FloatingLabelAlignment.center, //untuk membuat label pindah ke posisi tengah jika "center"
+                floatingLabelBehavior: FloatingLabelBehavior.auto, //floatingLabelBehavior untuk mengatur labelnya mau slalu diatas/auto/never.
+                hintText: 'Masukkan Nama Depan', //hintText untuk memberikan placeholder seperti diweb
+                hintStyle: const TextStyle(
+                  color: Colors.red, 
+                  fontWeight: FontWeight.normal,
+                ), //memberikan style pada placeholdernya
               ),
             ),
+            const SizedBox(height: 20),
+            const TextField(),
           ],
         ),
       ),
