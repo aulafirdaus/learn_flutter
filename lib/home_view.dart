@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
                 fontSize: 18, 
                 fontWeight: FontWeight.bold,
                 ),
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.center, //hintText dan helperText jadi ikut center karena textAlign ini
               inputFormatters: [
                 TextInputFormatter.withFunction((oldValue, newValue) => TextEditingValue(text: newValue.text.toUpperCase()),) //ini untuk membuat inputan text menjadi kapital semua (uppercase)
               ],
@@ -40,6 +40,10 @@ class HomePage extends StatelessWidget {
                   color: Colors.red.shade300,
                     child: const Text('Custom Label'),
 
+                ),
+                helperText: 'Ini untuk memberikan tulisan dibawah underline inputform',
+                helperStyle: const TextStyle( //helperStyle untuk memberikan style pada helperText
+                  color: Colors.red,
                 ),
                 hintText: 'Masukkan Nama Depan', //hintText untuk memberikan placeholder seperti diweb
                 hintStyle: const TextStyle(
