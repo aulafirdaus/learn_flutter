@@ -29,12 +29,18 @@ class HomePage extends StatelessWidget {
               ],
               decoration: InputDecoration(
                 icon: Icon(MdiIcons.account),
-                labelText: 'Nama',
+                // labelText: 'Nama',
                 labelStyle: const TextStyle( // untuk memberikan style pada labelText nya
-                  color: Colors.blue,
+                  color: Colors.white,
                 ),
                 floatingLabelAlignment: FloatingLabelAlignment.center, //untuk membuat label pindah ke posisi tengah jika "center"
                 floatingLabelBehavior: FloatingLabelBehavior.auto, //floatingLabelBehavior untuk mengatur labelnya mau slalu diatas/auto/never.
+                label: Container( //label ini adalah kembaliannya widget jadi bebas diisi widget apa saja, dan biasanya label ini untuk custom label nya, jika ingin yang otomatis pakai yang labelText. jadi label dengan labelText itu berbeda.
+                  padding: const EdgeInsets.all(3),
+                  color: Colors.red.shade300,
+                    child: const Text('Custom Label'),
+
+                ),
                 hintText: 'Masukkan Nama Depan', //hintText untuk memberikan placeholder seperti diweb
                 hintStyle: const TextStyle(
                   color: Colors.red, 
